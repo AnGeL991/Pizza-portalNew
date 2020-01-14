@@ -1,28 +1,15 @@
 import React from 'react';
 import PropTypes from'prop-types';
+import PageNav from '../PageNav/PageNav';
 
-
-class MainLayout extends React.Component{
-
-  mockProps ={
-    children:'children',
-  }
-
-  render(){
-    return (
-      <div>
-        {this.mockProps.children}
-      </div>
-    );
-  }
-}
+const MainLayout =({children})=>(
+  <div>
+    <PageNav/>
+    {children}
+  </div>
+);
 MainLayout.propTypes = {
-  children:PropTypes.string,
+  children:PropTypes.any,
 };
-
-
-
-
-
 
 export default MainLayout;
