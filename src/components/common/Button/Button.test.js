@@ -9,8 +9,8 @@ describe('Component Button',()=>{
     console.log(component.debug());
   });
   it('should render styles',()=>{
-    //const component = shallow(<Button />);
-    //expect(component.exists('component')).toEqual(true);
-    //expect(component.exists('.title')).toEqual(true);
+    const component = shallow(<Button />);
+    expect(component.exists('.component')).toEqual(true);
+    expect(component.exists('.title')).toEqual(true);
   });
 });
