@@ -7,8 +7,9 @@ const SeeWaiter=()=>(
     <h3>SeeWaiter viws</h3>
     <div>
       <Link to={`${process.env.PUBLIC_URL}/waiter/ordering/new` }> New Order</Link>
+      <Link to={`${process.env.PUBLIC_URL}/waiter/ordering/order/123abc`}>Change Order</Link>
       <Link to={`${process.env.PUBLIC_URL}/waiter/ordering/edit`}>Edit</Link>
-      <Link to={` ${process.env.PUBLIC_URL}/waiter/ordering/close`}>Close</Link>
+      <Link to={`${process.env.PUBLIC_URL}/waiter/ordering/close`}>Close</Link>
     </div>
   </div>
 );
