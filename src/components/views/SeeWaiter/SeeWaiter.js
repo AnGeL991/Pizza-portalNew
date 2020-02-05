@@ -30,7 +30,7 @@ class Waiter extends React.Component {
         return (
           <>
             <Button>thinking</Button>
-            <Button onClick={(e) => this.changeOfStatus(e, id)}>new order</Button>
+            <Button >new order</Button>
           </>
         );
       case 'thinking':
