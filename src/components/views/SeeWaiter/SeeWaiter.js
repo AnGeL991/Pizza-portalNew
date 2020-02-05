@@ -24,13 +24,13 @@ class Waiter extends React.Component {
     fetchTables();
   }
 
-  renderActions(status){
+  renderActions(status, id){
     switch (status) {
       case 'free':
         return (
           <>
             <Button>thinking</Button>
-            <Button>new order</Button>
+            <Button onClick={(e) => this.changeOfStatus(e, id)}>new order</Button>
           </>
         );
       case 'thinking':
@@ -60,7 +60,7 @@ class Waiter extends React.Component {
 
   render() {
     const { loading: { active, error }, tables } = this.props;
-
+    console.log(tables);
     if(active || !tables.length){
       return (
         <Paper className={styles.component}>
@@ -103,7 +103,7 @@ class Waiter extends React.Component {
                     )}
                   </TableCell>
                   <TableCell>
-                    {this.renderActions(row.status)}
+                    {this.renderActions(row.status, row.id)}
                   </TableCell>
                 </TableRow>
               ))}

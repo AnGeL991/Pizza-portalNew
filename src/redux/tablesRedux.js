@@ -1,5 +1,6 @@
 import Axios from 'axios';
 import { api } from '../settings';
+
 /* selectors */
 export const getAll = ({tables}) => tables.data;
 export const getLoadingState = ({tables}) => tables.loading;
@@ -13,10 +14,14 @@ const FETCH_START = createActionName('FETCH_START');
 const FETCH_SUCCESS = createActionName('FETCH_SUCCESS');
 const FETCH_ERROR = createActionName('FETCH_ERROR');
 
+const CHANGE_STATUS = createActionName('CHANGE_STATUS');
+
 /* action creators */
 export const fetchStarted = payload => ({ payload, type: FETCH_START });
 export const fetchSuccess = payload => ({ payload, type: FETCH_SUCCESS });
 export const fetchError = payload => ({ payload, type: FETCH_ERROR });
+
+export const changeStatus = payload => ({payload, type: CHANGE_STATUS});
 
 /* thunk creators */
 export const fetchFromAPI = () => {
@@ -34,6 +39,21 @@ export const fetchFromAPI = () => {
   };
 };
 
+export const updateStatus = (id) => {
+  return (dispatch, getState) => {
+    dispatch(fetchStarted());
+
+    Axios
+      .get(`${api.url}/${api.tables}`)
+      .then(res => {
+        dispatch(changeStatus({data: res.data, id}));
+      })
+      .catch(err => {
+        dispatch(fetchError(err.message || true));
+      });
+  };
+};
+
 /* reducer */
 export default function reducer(statePart = [], action = {}) {
   switch (action.type) {
@@ -42,6 +62,17 @@ export default function reducer(statePart = [], action = {}) {
         ...statePart,
         loading: {
           active: true,
+          error: false,
+        },
+      };
+    }
+    case CHANGE_STATUS: {
+      console.log(action);
+      return {
+        data: [...statePart.data.map(item =>
+          item.id === action.payload ? { ...item, status: 'ordered', order: 567} : item)],
+        loading: {
+          active: false,
           error: false,
         },
       };
