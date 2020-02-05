@@ -52,7 +52,7 @@ const Login = () => {
             >
               <form  noValidate autoComplete="off">
                 <TextField className={classes.TextField} required id="filled-required" label="Username" variant="filled" />
-                <TextField className={classes.TextField}  id="filled-password-input" label="Password" type="password" variant ="filled"/>
+                <TextField className={classes.TextField}  id="filled-password-input" label="Password" type="current-password" variant ="filled"/>
               </form>
             </Grid>
             <Grid
