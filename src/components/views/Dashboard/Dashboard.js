@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
   },
   Paper:{
     marginTop:50,
+    marginBottom:50,
   },
 }));
 

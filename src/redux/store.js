@@ -3,6 +3,7 @@ import thunk from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
 
 import tablesReducer from './tablesRedux';
+import OrderReducer from './orderTableRedux';
 
 // define initial state and shallow-merge initial data
 const initialState = {
@@ -18,6 +19,7 @@ const initialState = {
 // define reducers
 const reducers = {
   tables: tablesReducer,
+  order: OrderReducer,
 };
 
 // add blank reducers for initial state properties without reducers

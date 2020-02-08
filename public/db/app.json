@@ -381,5 +381,24 @@
     {"id": "4", "status": "prepared", "order": 234},
     {"id": "5", "status": "delivered", "order": 345},
     {"id": "6", "status": "paid", "order": 456}
+  ],
+  "TakeAway": [
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"}
   ]
 }

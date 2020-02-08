@@ -69,8 +69,9 @@ export default function reducer(statePart = [], action = {}) {
     case CHANGE_STATUS: {
       console.log(action);
       return {
+
         data: [...statePart.data.map(item =>
-          item.id === action.payload ? { ...item, status: 'ordered', order: 567} : item)],
+          item.id === action.payload.id ? { ...item, status: 'ordered', order :2134 } : item)],
         loading: {
           active: false,
           error: false,
