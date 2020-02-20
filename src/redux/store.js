@@ -14,12 +14,19 @@ const initialState = {
       error: false,
     },
   },
+  orders: {
+    data: {},
+    loading: {
+      active: false,
+      error: false,
+    },
+  },
 };
 
 // define reducers
 const reducers = {
   tables: tablesReducer,
-  order: OrderReducer,
+  orders: OrderReducer,
 };
 
 // add blank reducers for initial state properties without reducers

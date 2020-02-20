@@ -3,7 +3,7 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Dashboard from './components/views/Dashboard/Dashboard';
 import   Login  from './components/views/Login/Login';
-import FreeTables from './components/views/FreeTable/FreeTableContainer';
+import FreeTables from './components/views/FreeTable/FreeTable';
 import FreeTableEdit from './components/views/FreeTable/FreeTableEdit/FreeTableEdit';
 import FreeTableEvent from './components/views/FreeTable/FreeTableEvent/FreeTableEvent';
 import FreeTableReservation from './components/views/FreeTable/FreeTableReseration/FreeTableReservation';

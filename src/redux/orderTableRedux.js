@@ -1,11 +1,11 @@
 import Axios from 'axios';
 import { api } from '../settings';
 /* selectors */
-export const getAll = ({tables}) => tables.date;
-export const getLoadingState = ({tables}) => tables.loading;
+export const getAll = ({orders}) => orders.data;
+export const getLoadingState = ({orders}) => orders.loading;
 
 /* action name creator  */
-const reducerName = 'order';
+const reducerName = 'orders';
 const createActionName = name => `app/${reducerName}/${name}`;
 
 /* action types */
@@ -24,7 +24,7 @@ export const fetchFromAPI =() => {
   return (dispatch, getState) => {
     dispatch(fetchStarted());
     Axios
-      .get(`${api.url}/${api.TakeAway}`)
+      .get(`${api.url}/${api.orders}`)
       .then(res => {
         dispatch(fetchSuccess(res.data));
       })
@@ -32,6 +32,7 @@ export const fetchFromAPI =() => {
         dispatch(fetchError(err.message || true ));
       });
   };
+
 };
 /* reducer */
 export default function reducer(statePart = [], action = {}){
@@ -52,7 +53,7 @@ export default function reducer(statePart = [], action = {}){
           active:false,
           error:false,
         },
-        date: action.payload,
+        data: action.payload,
       };
     }
     case FETCH_ERROR: {

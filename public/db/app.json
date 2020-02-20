@@ -374,6 +374,25 @@
     "ppl": 3,
     "starters": ["lemonWater"]
   }],
+  "orders": [
+    {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "2", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "3", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "4", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "5", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "6", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "7", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "8", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "9", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "10", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "11", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "12", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "13", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "14", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "15", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "16", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
+    {"id": "17", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"}
+   ],
   "tables": [
     {"id": "1", "status": "free", "order": null},
     {"id": "2", "status": "thinking", "order": null},
@@ -381,24 +400,5 @@
     {"id": "4", "status": "prepared", "order": 234},
     {"id": "5", "status": "delivered", "order": 345},
     {"id": "6", "status": "paid", "order": 456}
-  ],
-  "TakeAway": [
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"},
-   {"id": "1", "status": "delivered", "Amount": "9","Telephone": "999-023-234", "Adres": "Warszawa"}
   ]
 }

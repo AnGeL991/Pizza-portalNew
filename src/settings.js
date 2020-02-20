@@ -1,11 +1,11 @@
 export const api = {
   url: '//' + window.location.hostname + (window.location.hostname==='localhost' ? ':3131' : '') + '/api',
+  orders: 'orders',
   tables: 'tables',
   products: 'products',
   order: 'order',
   booking: 'booking',
   event: 'event',
-  takeAway: 'takeAway',
   dateStartParamKey: 'date_gte',
   dateEndParamKey: 'date_lte',
   notRepeatParam: 'repeat=false',
